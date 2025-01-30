@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & TV Show Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie & TV Show Chatbot</h1>
+        <p>Your personal assistant for finding what to watch next!</p>
+    </header>
+
+    <main>
+        <div class="chat-container">
+            <div id="chatbox">
+                <div class="chat-message bot-message">
+                    Welcome! Ask me for movie or TV show recommendations.
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+            <div class="feedback-container">
+                <button class="feedback-btn" onclick="provideFeedback('like')">👍 Like</button>
+                <button class="feedback-btn" onclick="provideFeedback('dislike')">👎 Dislike</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Powered by Mock APIs | Created by Miles</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
